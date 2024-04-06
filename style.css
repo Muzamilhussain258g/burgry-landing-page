@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color:black;
+    width:100%;
+    color:white;
+}
+.main{
+    /* border: 1px solid white; */
+    width: 70%;
+    margin: 0 auto;
+}
+nav{
+    /* color: #ffff; */
+    background-color:black;
+    height:60px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin: 0px auto;
+}
+nav h3{
+    font-weight: 800;
+    font-size: 3vmax;
+    color: white;
+}
+nav > h3 > span{
+    color: orange;
+}
+nav ul{
+    gap: 35px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}   
+nav > ul > li{
+    color: white;
+    font-weight: 500;
+}
+
+ul #home-link{
+    color: orange;
+}
+ul #shop-link{
+    color: black;
+    background-color: orange;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: none;
+}
+.menue{
+    color: orange;
+    display: none;
+}
+
+.hero-section{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid white; */
+    margin-top: 20px;
+    display: flex;
+    /* padding: 20px; */
+}
+
+.hero-sec-pic{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+.hero-sec-pic img{
+    width: 100%;
+    height:100%;
+}
+
+.hero-sec-content{
+    width: 50%;
+    padding: 30px 50px 30px 30px;
+
+}
+.hero-sec-content h1{
+    color: white;
+    /* padding: 0px 30px; */
+    font-size: 2.5vmax;
+    margin:35px 0px;
+}
+.hero-sec-intro{
+    border-top:2px solid orange ;
+    padding: 20px 0px;
+    color: white;
+}
+/* .hero-sec-content p{
+    color: white;
+} */
+
+
+.qualities{
+    /* border: 1px solid white; */
+    display: flex;
+    column-gap: 30px;
+}
+.quality-1{
+    /* border: 1px solid white; */
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quality-2{
+    /* border: 1px solid white; */
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quality-3{
+    /* border: 1px solid white; */
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qualities i{
+    font-size: 2rem;
+    color: orange;
+}
+.qualities h4{
+    font-size: 1rem;
+    
+}
+
+#learMore{
+    background-color: orange;
+    padding: 10px 20px;
+    /* color: bla; */
+    border-radius: 5px;
+    cursor:pointer;
+    border: none;
+    margin-top: 50px;
+}
+
+
+/* responsiveness start */
+/* avbar responsiveess start */
+@media (max-width:1100px) {
+    .main{
+    /* border: 1px solid white; */
+    width: 100%;
+    margin: 0 auto;
+}
+    nav{
+        padding:0px 50px ;
+    /* color: #ffff; */
+    background-color:black;
+    height:60px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin: 0px auto;
+
+}
+
+}
+
+@media (max-width:840px){
+    nav ul{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 12px;
+}   
+}
+@media (max-width:600px) {
+    nav ul{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 12px;
+    display: none;
+}   
+.menue{
+    display: inline-block;
+    font-size: 1.5rem
+}
+
+}
+
+/* navbar reposiveness ended */
+
+/* hero section responsiveness start */
+@media (max-width: 600px) {
+    .hero-section{
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid white; */
+        margin-top: 20px;
+        display: block;
+        /* padding: 20px; */
+    }
+    .hero-sec-pic{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid white; */
+    }
+    .hero-sec-content{
+        width: 100%;
+        padding: 30px 50px 30px 30px;
+    
+    }
+    .hero-sec-content h1{
+        color: white;
+        /* padding: 0px 30px; */
+        font-size: 3vmax;
+        margin:35px 0px;
+    }
+    .hero-sec-intro{
+        border-top:2px solid orange ;
+        padding: 20px 0px;
+        color: white;
+        font-size: 0.8sharem;
+    }
+}
